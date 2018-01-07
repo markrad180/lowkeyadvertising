@@ -1,0 +1,66 @@
+[
+  {
+    "brandName":"Amazon",
+    "recognitionText":"amazon",
+    "recognitionText2":"prime",
+    "recognitionText3":"alexa",
+    "brandLogoPath":"./logoImages/amazonLogo.png",
+    "preferredColor": "#FFF"
+  },
+  {
+    "brandName":"BarnesAndNoble",
+    "recognitionText":"barnes and noble",
+    "recognitionText2":"barnes and nobles",
+    "recognitionText3":"barnes and",
+    "brandLogoPath":"./logoImages/barnes-and-noble-logo.png",
+    "preferredColor": "#FFF"
+  },
+  {
+    "brandName":"Gatorade",
+    "recognitionText":"gatorade",
+    "recognitionText2":"propel",
+    "recognitionText3":"gatorades",
+    "brandLogoPath":"./logoImages/gatoradeLogo.png",
+    "preferredColor": "#FFF"
+  },
+  {
+    "brandName":"DominosPizza",
+    "recognitionText":"domino's pizza",
+    "recognitionText2":"domino's",
+    "recognitionText3":"dominoes",
+    "brandLogoPath":"./logoImages/logoDominoFinal.png",
+    "preferredColor": "#FFF"
+  },
+  {
+    "brandName":"MajorLeagueHacking",
+    "recognitionText":"mlh",
+    "recognitionText2": "major league hacking",
+    "recognitionText3": "major hacking",
+    "brandLogoPath":"./logoImages/mlhLogo.png",
+    "preferredColor": "#FFF"
+  },
+  {
+    "brandName":"Spotify",
+    "recognitionText":"spotify",
+    "recognitionText2": "spot",
+    "recognitionText3": "spotify playlist",
+    "brandLogoPath":"./logoImages/spotifyLogo.png",
+    "preferredColor": "#FFF"
+  },
+  {
+    "brandName":"Steam",
+    "recognitionText":"gabon",
+    "recognitionText2": "steam",
+    "recognitionText3": "valve",
+    "brandLogoPath":"./logoImages/steamLogo.png",
+    "preferredColor": "#FFF"
+  },
+  {
+    "brandName":"Wawa",
+    "recognitionText":"wawa",
+    "recognitionText2": "hoagie fest",
+    "recognitionText3": "wawa",
+    "brandLogoPath":"./logoImages/wawaLogo.png",
+    "preferredColor": "#FFF"
+  }
+]

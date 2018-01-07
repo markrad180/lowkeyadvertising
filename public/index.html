@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+  <link rel="stylesheet" href="./css/master.css">
+  <body  ng-app='app' ng-controller='ctr1' ng-cloak>
+    <div class="container">
+
+      <!-- ACCOUNT STATUS -->
+      <div class="accountStatus">
+        <div class="logo flexRow">
+          <img class="logoImg" src={{currentImg}} alt="">
+        </div>
+        <div class="balance flexRow">
+          <p>{{currentPrice}}</p>
+        </div>
+      </div>
+
+      <!-- MENU -->
+      <div class="menu">
+        <div class="slider flexRow">
+
+          <div class="panelHolder">
+
+            <div data={{$index}} class="panel flexRow" ng-repeat='company in companies track by $index' ng-click='switchCompany($index)'>
+              <img src={{company.brandLogoPath}} alt="">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cashout flexCol">
+        <div class="dollarSign flexRow"><p>$</p></div>
+        <p class="cashoutText">cashout</p>
+      </div>
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script>
+        // if (annyang) {
+        //   const pauseHandle = () => {
+        //     annyang.pause();
+        //     setTimeout(() => {
+        //       annyang.start();
+        //     }, 2000);
+        //   }
+        //   // Let's define our first command. First the text we expect, and then the function it should call
+        //   var commands = {
+        //     'amazon *val': function() {
+        //       console.log('amazon');
+        //       $('.balance p').text('amazon');
+        //       pauseHandle();
+        //     },
+        //     'barnes and noble *val': function() {
+        //       console.log('barnes');
+        //       $('.balance p').text('barnes');
+        //       pauseHandle();
+        //     },
+        //     'gatorade *val': function() {
+        //       console.log('gatorade');
+        //       $('.balance p').text('gatorade');
+        //       pauseHandle();
+        //     },
+        //     'dominos pizza *val': function() {
+        //       console.log('dominos');
+        //       $('.balance p').text('dominos');
+        //       pauseHandle();
+        //     },
+        //     'major league hacking *val': function() {
+        //       console.log('major');
+        //       $('.balance p').text('major');
+        //       pauseHandle();
+        //     },
+        //     'spotify *val': function() {
+        //       console.log('spotify');
+        //       $('.balance p').text('spotify');
+        //       pauseHandle();
+        //     },
+        //     'steam *val': function() {
+        //       console.log('steam');
+        //       $('.balance p').text('steam');
+        //       pauseHandle();
+        //     },
+        //     'wawa *val': function() {
+        //       console.log('wawa');
+        //       $('.balance p').text('wawa');
+        //       pauseHandle();
+        //     },
+        //   };
+        //
+        //   // Add our commands to annyang
+        //   annyang.addCommands(commands);
+        //   //
+        //   // annyang.addCallback('soundstart', function(e){
+        //   //   debugger
+        //   //   console.log('soundstart:' + e.result);
+        //   // })
+        //   // debugger
+        //   annyang.debug();
+        //   // Start listening. You can call this here, or attach this call to an event, button, etc.
+        //   annyang.start();
+        // }
+      </script>
+
+      <script src="./js/main.js" type="text/javascript"></script>
+    </div>
+  </body>
+</html>
